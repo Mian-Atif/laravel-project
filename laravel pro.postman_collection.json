@@ -1,0 +1,219 @@
+{
+	"info": {
+		"_postman_id": "42298f0d-17b4-4dac-8446-a46c34c408ae",
+		"name": "laravel pro",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "updateuser",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3MiOiJsb2NhbGhvc3QiLCJpYXQiOjE2MzY1Mzc1NDEsIm5iZiI6MTYzNjUzNzU1MSwiZXhwIjoxNjM2NTQyMDkxLCJhdWQiOiJhcHAgdXNlciIsImRhdGEiOnsiaWQiOjIwLCJuYW1lIjoia2FzaGlmIiwiZW1haWwiOiJtdWhhc3N4eHMzeHh4MzJhcTNmZmZmM21kdEBnbWFpbC5jb20iLCJwYXNzd29yZCI6IiQyeSQxMCRqalwvUVNmUFVTY1JBd0U5ZEVSUlhPT2txY29MN1JLenN5QUNUNldSMkVRVGVKdVlSaTJSYlMiLCJwaG9uZV9ubyI6IjAzMDEzNTAwNzg2IiwicHJvZmlsZSI6IlVMUiIsInN0YXR1cyI6bnVsbCwiZW1haWxfdmVyaWZpZWRfYXQiOm51bGwsInJlbWVtYmVyX3Rva2VuIjpudWxsLCJjcmVhdGVkX2F0IjpudWxsLCJ1cGRhdGVkX2F0IjpudWxsfX0.sU7zCJm9EVbDGp29r6h3RrKgdOwHsCUXgYY51dalwlt5CKHjSdr8k5gmN_N4ONkxXQt7qXLTKvJigiHCvrRKwQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \r\n \"name\":\"kashif\",\r\n\"phone_no\":\"03013500786\",\r\n\"profile\":\"UvfgsLR\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/updateuser",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"updateuser"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "signin",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "7",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"email\":\"muhassxxs3xxx32aq3ffff3mdt@gmail.com\",\r\n\"password\":\"1234\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/signin",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"signin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "signup",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \r\n \"name\":\"Atif\",\r\n\"email\":\"mianatifrizwanbashir786@gmail.com\",\r\n\"password\":\"1234\",\r\n\"phone_no\":\"03017737700\",\r\n\"profile\":\"ULR\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/signup",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "searchuser",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3MiOiJsb2NhbGhvc3QiLCJpYXQiOjE2MzY1Mzc1NDEsIm5iZiI6MTYzNjUzNzU1MSwiZXhwIjoxNjM2NTQyMDkxLCJhdWQiOiJhcHAgdXNlciIsImRhdGEiOnsiaWQiOjIwLCJuYW1lIjoia2FzaGlmIiwiZW1haWwiOiJtdWhhc3N4eHMzeHh4MzJhcTNmZmZmM21kdEBnbWFpbC5jb20iLCJwYXNzd29yZCI6IiQyeSQxMCRqalwvUVNmUFVTY1JBd0U5ZEVSUlhPT2txY29MN1JLenN5QUNUNldSMkVRVGVKdVlSaTJSYlMiLCJwaG9uZV9ubyI6IjAzMDEzNTAwNzg2IiwicHJvZmlsZSI6IlVMUiIsInN0YXR1cyI6bnVsbCwiZW1haWxfdmVyaWZpZWRfYXQiOm51bGwsInJlbWVtYmVyX3Rva2VuIjpudWxsLCJjcmVhdGVkX2F0IjpudWxsLCJ1cGRhdGVkX2F0IjpudWxsfX0.sU7zCJm9EVbDGp29r6h3RrKgdOwHsCUXgYY51dalwlt5CKHjSdr8k5gmN_N4ONkxXQt7qXLTKvJigiHCvrRKwQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"email\":\"mianatifrizwanbashir786@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/searchuser",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"searchuser"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "uploadfile",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3MiOiJsb2NhbGhvc3QiLCJpYXQiOjE2MzY1Mzc1NDEsIm5iZiI6MTYzNjUzNzU1MSwiZXhwIjoxNjM2NTQyMDkxLCJhdWQiOiJhcHAgdXNlciIsImRhdGEiOnsiaWQiOjIwLCJuYW1lIjoia2FzaGlmIiwiZW1haWwiOiJtdWhhc3N4eHMzeHh4MzJhcTNmZmZmM21kdEBnbWFpbC5jb20iLCJwYXNzd29yZCI6IiQyeSQxMCRqalwvUVNmUFVTY1JBd0U5ZEVSUlhPT2txY29MN1JLenN5QUNUNldSMkVRVGVKdVlSaTJSYlMiLCJwaG9uZV9ubyI6IjAzMDEzNTAwNzg2IiwicHJvZmlsZSI6IlVMUiIsInN0YXR1cyI6bnVsbCwiZW1haWxfdmVyaWZpZWRfYXQiOm51bGwsInJlbWVtYmVyX3Rva2VuIjpudWxsLCJjcmVhdGVkX2F0IjpudWxsLCJ1cGRhdGVkX2F0IjpudWxsfX0.sU7zCJm9EVbDGp29r6h3RrKgdOwHsCUXgYY51dalwlt5CKHjSdr8k5gmN_N4ONkxXQt7qXLTKvJigiHCvrRKwQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/C:/Users/Mian Atif Rizwan/Pictures/atif.jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/uploadfile",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"uploadfile"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
